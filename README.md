@@ -45,6 +45,7 @@ Credits
 * http://silex.sensiolabs.org/documentation
 * http://daringfireball.net/projects/markdown/syntax
 * http://michelf.com/projects/php-markdown
+* https://github.com/lyrixx/Silex-Kitchen-Edition
 
 ![John Gruber, Portrait by George Del Barrio][i]
 
