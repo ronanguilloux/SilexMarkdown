@@ -1,0 +1,20 @@
+{% if active is not defined %}
+    {% set active = null %}
+{% endif %}
+
+<div style="z-index: 5;" class="topbar-wrapper">
+    <div class="topbar">
+        <div class="topbar-inner">
+            <div class="container">
+                <h3><a href="/">My Website</a></h3>
+                <ul class="nav">
+                    {% for key, item in menu %}
+                    <li
+                        {% if current == key %}class="active"{% endif %}
+                    ><a href="/{{ key }}">{{ item }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div><!-- /topbar-inner -->
+    </div><!-- /topbar -->
+</div>
