@@ -1,0 +1,20 @@
+{
+    "name": "ronanguilloux/SilexMarkdown",
+    "type": "App",
+    "description": "Generates a markdown-based website, using Silex micro-framework & your own markdown files"
+    "keywords": ["markdown", "website", "cms", "silex"],
+    "homepage": "https://github.com/ronanguilloux/SilexMarkdown",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ronan Guilloux",
+            "email": "ronan.guilloux@gmail.com"
+        }
+    ],
+   "require": {
+        "php": ">=5.3.3",
+        "silex/silex": "1.0.*@",
+        "twig/twig": ">=1.8,<2.0-dev",
+        "michelf/php-markdown"
+    },
+}
