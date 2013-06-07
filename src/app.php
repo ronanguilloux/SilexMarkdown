@@ -27,7 +27,7 @@ $app->match('/', function() use ($app) {
 })->bind('homepage');
 
 $app->match('/{res}', function($res) use ($app) {
-    
+
     $content = $app['md.finder']->getContent($res);
     if($content){
         $html = $app['md.parser']->transform($content);
