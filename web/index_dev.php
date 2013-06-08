@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 error_reporting(-1);
 
 // Silex
-$env = "prod";
+$env = "dev";
 $app = require __DIR__.'/../src/SilexMarkdown/app.php';
 
 // php -S localhost:8080 -t web web/index.php
