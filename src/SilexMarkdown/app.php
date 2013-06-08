@@ -6,14 +6,20 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+use Silex\Provider\HttpCacheServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 
 use Rg\Silex\Provider\Markdown\MarkdownServiceProvider;
 
 $app = new Silex\Application();
 
-// Debug
-$app['debug'] = true;
+// Config
+$env = (null == $env) ? 'prod' : $env;
+if(in_array($env,array('dev','test','prod'))) {
+    require __DIR__. "/../../resources/config/$env.php";
+}
+
+$app->register(new HttpCacheServiceProvider()); // see ./resources/config
 
 $app->register(new TwigServiceProvider(), array(
     'twig.path'       => __DIR__.'/views',

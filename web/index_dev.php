@@ -1,5 +1,8 @@
 <?php
 
+ini_set('display_errors', 1);
+error_reporting(-1);
+
 // Silex
 $env = "prod";
 $app = require __DIR__.'/../src/SilexMarkdown/app.php';
@@ -10,5 +13,4 @@ if (php_sapi_name() === 'cli-server' && is_file($filename)) {
         return false;
 }
 
-$app['http_cache']->run();
-
+$app->run();
