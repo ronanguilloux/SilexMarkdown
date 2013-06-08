@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 error_reporting(-1);
 
 $env = "dev";
-$app = require __DIR__.'/../src/SilexMarkdown/app.php';
+$app = require __DIR__.'/src/SilexMarkdown/app.php';
 
-$console = require __DIR__.'/src/console.php';
+$console = require __DIR__.'/src/SilexMarkdown/console.php';
 $console->run();
