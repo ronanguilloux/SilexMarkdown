@@ -1,19 +1,18 @@
 <?php
 
 use Silex\WebTestCase;
-use Symfony\Component\HttpFoundation\SessionStorage\FilesystemSessionStorage;
-use Silex\Provider\DoctrineServiceProvider;
+#use Symfony\Component\HttpFoundation\SessionStorage\FilesystemSessionStorage;
 
 class ApplicationTest extends WebTestCase
 {
     public function createApplication()
     {
         // Silex
-        $this->app = require __DIR__.'/../../src/app.php';
+        $app = require __DIR__.'/../../src/SilexMarkdown/app.php';
 
         // Tests mode
-        $this->app['debug'] = true;
-        unset($this->app['exception_handler']);
+        $app['debug'] = true;
+        $app['exception_handler']->disable();
 
         return $app;
     }

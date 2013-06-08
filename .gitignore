@@ -1,3 +1,6 @@
-vendor/
-composer.lock
-*.phar
+/vendor/
+/composer.lock
+/*.phar
+/resources/cache/*
+/resources/log/*
+/web/assets/*

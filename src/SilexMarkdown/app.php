@@ -1,25 +1,27 @@
 <?php
 
+require_once __DIR__.'/../../vendor/autoload.php';
+
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-require_once __DIR__.'/../vendor/silex/silex.phar';
+use Silex\Provider\TwigServiceProvider;
+
+use Rg\Silex\Provider\Markdown\MarkdownServiceProvider;
 
 $app = new Silex\Application();
 
 // Debug
 $app['debug'] = true;
 
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path'       => __DIR__.'/../views',
+$app->register(new TwigServiceProvider(), array(
+    'twig.path'       => __DIR__.'/views',
     'twig.class_path' => __DIR__.'/../vendor/twig/lib',
 ));
 
-$app['autoloader']->registerNamespace('Phpmarkdown', __DIR__.'/../vendor/phpmarkdown/lib');
-
-$app->register(new Phpmarkdown\Provider\PhpmarkdownServiceProvider(), array(
-    'md.path' => __DIR__ .'/../resources/markdown')
+$app->register(new MarkdownServiceProvider(), array(
+    'md.path' => __DIR__ .'/../../resources/markdown')
 );
 
 $app->match('/', function() use ($app) {
@@ -38,6 +40,7 @@ $app->match('/{res}', function($res) use ($app) {
             )
         );
     }
+
     return new Response("The requested page could not be found.", 404);
 });
 

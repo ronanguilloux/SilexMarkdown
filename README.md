@@ -27,12 +27,22 @@ Installation
 *  `git clone git@github.com:ronanguilloux/Silex-Markdown.git`
 *  Include/copy/adapat the ./bin/apache2.conf file for your own web server configuration
 
+``` bash
+$ composer.phar install --dev
+```
+
 Just start creating your own markdown files in the resources/ directory, and your website is up.
 
 Tests
 -----
 
-Just run `phpunit`
+Tests need --dev option while installing dependecing using composer:
+
+``` bash
+$ composer.phar install --dev
+$ phpunit
+```
+
 
 Support
 -------
