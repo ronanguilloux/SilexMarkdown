@@ -1,6 +1,6 @@
 /vendor/
 /composer.lock
 /*.phar
-/resources/cache/*
-/resources/log/*
+*/logs/*
+*/cache/*
 /web/assets/*
