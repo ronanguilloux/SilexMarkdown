@@ -1,5 +1,5 @@
 {
-    "name": "ronanguilloux/silexmarkdownserviceprovider",
+    "name": "ronanguilloux/silexmarkdown",
     "type": "App",
     "description": "Generates a markdown-based website, using Silex micro-framework & your own markdown files",
     "keywords": ["markdown", "website", "cms", "silex"],
