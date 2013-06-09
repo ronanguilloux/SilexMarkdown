@@ -17,7 +17,11 @@
         "twig/twig"                                  : ">=1.8,<2.0-dev",
         "michelf/php-markdown"                       : "1.3.*@dev",
         "twitter/bootstrap"                          : "~2.3",
+        "components/bootstrap"                       : "*",
+        "components/modernizr"                       : "*",
         "symfony/console"                            : "~2.3",
+        "symfony/finder"                             : "~2.2",
+        "symfony/filesystem"                         : "~2.2",
         "kriswallsmith/assetic"                      : "~1.0.0",
         "mheap/silex-assetic"                        : "dev-master@dev"
     },
@@ -34,5 +38,10 @@
     "scripts": {
         "post-install-cmd": "SilexMarkdown\\Composer\\Script::install",
         "post-update-cmd": "SilexMarkdown\\Composer\\Script::install"
+    },
+    "config": {
+        "component-dir": "web/assets",
+        "component-baseurl": "/assets"
     }
+
 }
