@@ -31,6 +31,19 @@ Installation
 $ composer.phar install --dev
 ```
 
+Apache2 vhost example:
+
+``` xml
+<VirtualHost *:80>
+    ServerName www.silexmarkdown
+    DocumentRoot /path.to/SilexMarkdown/web
+    DirectoryIndex index.php
+    ErrorLog /var/log/apache2/error.silexmarkdown.log
+    CustomLog /var/log/apache2/access.silexmarkdown.log combined
+</VirtualHost>
+```
+
+
 Just start creating your own markdown files in the resources/ directory, and your website is up.
 
 Tests
@@ -75,3 +88,4 @@ _This is the 0-start.md file, rendered as a web page, using Silex & Markdown._
 [2]: /2
 [3]: /3
 [4]: /4
+
