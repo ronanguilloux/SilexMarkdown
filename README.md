@@ -3,23 +3,23 @@ Markdown-generated website
 
 Generates a markdown-based website, using [Silex micro-framework][s] & your own [markdown][m] files.
 
-All markdown files in the /resource directory are displayed as links in the navigation bar above. Markdown files use the [markdown syntax][m].
 
-All lorem ipsum-like paragraphs come from [Samuel L. Ipsum][l].
+A markdown-based website, the easy way
+--------------------------------------
 
-The */resources* directory contains 5 markdown files:
+Markdown files use the [markdown syntax][m], a very easy way to add typographical enhancements in your texts.
+All markdown files in the `./resource` directory are displayed as links in the navigation bar above
+(all demo files texts come from [Cupcake Ipsum][l]).
+
+The `/resources` directory contains various markdown files, prefixed with a ordered number:
 
 * [0-start.md][0]
 * [1-show.md][1]
 * [2-money.md][2]
-* [3-Do you see any Teletubbies?.md][3]
-* [4-gun.md][4]
 
-It already embeds :
+etc.
 
-* [Twig][t]
-* [HTML5 boilerplate][b]
-* [Twitter Bootrap][tb]
+The website use lastest version of [Twig][t] & [Twitter Bootrap][tb]
 
 Installation
 ------------
