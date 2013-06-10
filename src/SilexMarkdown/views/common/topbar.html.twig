@@ -2,19 +2,27 @@
     {% set active = null %}
 {% endif %}
 
-<div style="z-index: 5;" class="topbar-wrapper">
-    <div class="topbar">
-        <div class="topbar-inner">
-            <div class="container">
-                <h3><a href="/">My Website</a></h3>
+<!-- Navbar
+================================================== -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="/">Home</a>
+            <div class="nav-collapse collapse">
                 <ul class="nav">
-                    {% for key, item in menu %}
+{% for key, item in menu %}
                     <li
                         {% if current == key %}class="active"{% endif %}
                     ><a href="/{{ key }}">{{ item }}</a></li>
-                    {% endfor %}
+{% endfor %}
                 </ul>
             </div>
-        </div><!-- /topbar-inner -->
-    </div><!-- /topbar -->
+        </div>
+    </div>
 </div>
+

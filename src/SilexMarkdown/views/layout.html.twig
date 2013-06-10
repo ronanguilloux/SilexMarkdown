@@ -22,28 +22,26 @@
         <link rel="shortcut icon" href="{{ app.request.basepath }}/assets/ico/favicon.png">
 
         <script src="{{ app.request.basepath }}/assets/modernizr/modernizr.js"></script>
+        <style>
+            /* 60px to make the container go all the way to the bottom of the topbar */
+            body {
+                padding-top: 60px;
+            }
+        </style>
     </head>
     <body>
-        <div id="main-container">
-            {% include ('common/header.html.twig') %}
 
-            <div id="main" role="main" class="container span8 offset4">
+{% include ('common/header.html.twig') %}
 
-                {% block content %}
+    <div class="container">
 
-                    <h1>Documentation</h1>
+        {% block content %}
+            <h1>Documentation</h1>
+        {% endblock %}
 
-                {% endblock %}
+{% include ('common/footer.html.twig') %}
 
-            </div>
-
-            {% include ('common/footer.html.twig') %}
-
-        </div> <!--! /#main-container -->
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{ app.request.basepath }}/assets/js/jquery.js/"><\/script>')</script>
-        <script src="{{ app.request.basepath }}/assets/js/scripts.js"></script>
+    </div><!-- /container -->
 
     </body>
 </html>

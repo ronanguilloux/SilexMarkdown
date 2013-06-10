@@ -18,12 +18,10 @@ $app['assetic.enabled']              = true;
 $app['assetic.path_to_cache']        = $app['cache.path'] . '/assetic' ;
 $app['assetic.path_to_web']          = __DIR__ . '/../../web/assets';
 $app['assetic.input.path_to_assets'] = __DIR__ . '/../assets';
-
-$app['assetic.input.path_to_css']       = $app['assetic.input.path_to_assets'] . '/less/style.less';
-
-$app['assetic.output.path_to_css']      = 'css/styles.css';
-$app['assetic.input.path_to_js']        = array();
-$app['assetic.input.path_to_js']        = array(
+$app['assetic.input.path_to_css']    = $app['assetic.input.path_to_assets'] . '/css/style.css';
+$app['assetic.output.path_to_css']   = '/css/styles.css';
+$app['assetic.input.path_to_js']     = array();
+$app['assetic.input.path_to_js']     = array(
     __DIR__.'/../../vendor/twitter/bootstrap/js/bootstrap-tooltip.js',
     $app['assetic.input.path_to_assets'] . '/js/script.js',
 );
