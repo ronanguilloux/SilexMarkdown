@@ -1,7 +1,7 @@
 {
     "name": "ronanguilloux/silexmarkdown",
     "type": "App",
-    "description": "Generates a markdown-based website, using Silex micro-framework & your own markdown files",
+    "description": "Markdown-generated dynamic website, using damn simple markdown files & Silex micro-framework",
     "keywords": ["markdown", "website", "cms", "silex"],
     "homepage": "https://github.com/ronanguilloux/SilexMarkdown",
     "license": "MIT",
