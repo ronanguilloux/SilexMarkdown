@@ -1,8 +1,7 @@
 Markdown-generated website
 ==========================
 
-Generates a markdown-based website,  
-using [Silex micro-framework][s] & your own [markdown][m] files.
+Generates a markdown-based website, using [Silex micro-framework][s] & your own [markdown][m] files.
 
 
 A markdown-based website, the easy way
@@ -67,6 +66,7 @@ You can find a copy of this software here: https://github.com/ronanguilloux/Sile
 Credits
 -------
 
+* Fake content texts & illustrations: [http://cupcakeipsum.com](http://cupcakeipsum.com)
 * [All contributors](https://github.com/ronanguilloux/SilexMarkdown/contributors)
 * [http://silex.sensiolabs.org](http://silex.sensiolabs.org): PHP micro-framework based on the Symfony2 Components
 * [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax): easy-to-read and easy-to-write syntax
@@ -87,6 +87,6 @@ Credits
 [1]: /1
 [2]: /2
 [3]: /3
-[r]: /4
+[4]: /4
 [5]: /5
 
