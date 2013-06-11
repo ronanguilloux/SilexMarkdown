@@ -66,6 +66,7 @@ You can find a copy of this software here: https://github.com/ronanguilloux/Sile
 Credits
 -------
 
+* Fake content texts & illustrations: [http://cupcakeipsum.com](http://cupcakeipsum.com)
 * [All contributors](https://github.com/ronanguilloux/SilexMarkdown/contributors)
 * [http://silex.sensiolabs.org](http://silex.sensiolabs.org): PHP micro-framework based on the Symfony2 Components
 * [http://daringfireball.net/projects/markdown/syntax](http://daringfireball.net/projects/markdown/syntax): easy-to-read and easy-to-write syntax
