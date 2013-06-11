@@ -12,24 +12,33 @@ use SilexAssetic\AsseticServiceProvider;
 
 use Rg\Silex\Provider\Markdown\MarkdownServiceProvider;
 
-$app = new Silex\Application();
 
-// Config
+
+// -----------------------------------------------
+// App & config
+
+$app = new Silex\Application();
 $env = isset($env) ? $env : 'prod';
 if(in_array($env,array('dev','test','prod'))) {
     require __DIR__. "/../../resources/config/$env.php";
 }
 
-$app->register(new HttpCacheServiceProvider()); // see ./resources/config
 
+// -----------------------------------------------
+// Services registering
+
+$app->register(new HttpCacheServiceProvider()); // see ./resources/config
 $app->register(new TwigServiceProvider(), array(
     'twig.path'       => __DIR__.'/views',
     'twig.class_path' => __DIR__.'/../vendor/twig/lib',
 ));
-
 $app->register(new MarkdownServiceProvider(), array(
     'md.path' => __DIR__ .'/../../resources/markdown')
 );
+
+
+// -----------------------------------------------
+// Assetic configuration
 
 if (isset($app['assetic.enabled']) && $app['assetic.enabled']) {
     $app->register(new AsseticServiceProvider(), array(
@@ -71,9 +80,8 @@ if (isset($app['assetic.enabled']) && $app['assetic.enabled']) {
 }
 
 
-
-// CONTROLLERS:
-// ------------
+// -----------------------------------------------
+// Controllers
 
 $app->match('/', function() use ($app) {
     return $app->redirect('/0');
@@ -92,7 +100,7 @@ $app->match('/{res}', function($res) use ($app) {
     );
     }
 
-    return new Response("The requested page could not be found.", 404);
+    return new Response("Sorry, the requested page could not be found.", 404);
 });
 
 $app->error(function (\Exception $e, $code) use ($app) {
@@ -102,10 +110,10 @@ $app->error(function (\Exception $e, $code) use ($app) {
     $message  = "[$code] ";
     switch ($code) {
     case 404:
-        $message .= 'The requested page could not be found.';
+        $message .= 'Sorry, the requested page could not be found.';
         break;
     default:
-        $message .= 'We are sorry, but something went terribly wrong.';
+        $message .= 'Sorry, something went terribly wrong.';
     }
 
     return new Response($message, $code);
