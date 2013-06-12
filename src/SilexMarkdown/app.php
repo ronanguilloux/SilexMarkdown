@@ -92,10 +92,13 @@ $app->match('/{res}', function($res) use ($app) {
     $content = $app['md.finder']->getContent($res);
     if($content){
         $html = $app['md.parser']->transform($content);
+        $title = $app['md.parser']->getTitle($content);
+
         return $app['twig']->render('markdown.html.twig', array(
             'menu' => $app['md.finder']->getList(),
             'current' => $res,
-            'html' => $html
+            'html' => $html,
+            'title' => $title
         )
     );
     }
@@ -114,6 +117,7 @@ $app->error(function (\Exception $e, $code) use ($app) {
         break;
     default:
         $message .= 'Sorry, something went terribly wrong.';
+        $message .= "<pre>$e . $code . </pre>";
     }
 
     return new Response($message, $code);
