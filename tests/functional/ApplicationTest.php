@@ -31,6 +31,6 @@ class ApplicationTest extends WebTestCase
         $crawler = $client->request('GET', '/1');
 
         $this->assertTrue($client->getResponse()->isOk());
-        $this->assertEquals(1, $crawler->filter('a[href="http://slipsum.com"]')->count());
+        $this->assertEquals(1, $crawler->filter('a[href="http://cupcakeipsum.com"]')->count());
     }
 }
