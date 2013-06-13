@@ -83,10 +83,10 @@ Credits
 [s]: http://silex.sensiolabs.org/documentation
 [t]: http://twig.sensiolabs.org/
 [b]: http://twitter.github.com/bootstrap
-[0]: /0
-[1]: /1
-[2]: /2
-[3]: /3
-[4]: /4
-[5]: /5
+[0]: https://github.com/ronanguilloux/SilexMarkdown/blob/master/resources/markdown/0-README.md
+[1]: https://github.com/ronanguilloux/SilexMarkdown/blob/master/resources/markdown/1-Cupcake.md
+[2]: https://github.com/ronanguilloux/SilexMarkdown/blob/master/resources/markdown/2-Cheesecake.md
+[3]: https://github.com/ronanguilloux/SilexMarkdown/blob/master/resources/markdown/3-Gingerbread.md
+[4]: https://github.com/ronanguilloux/SilexMarkdown/blob/master/resources/markdown/4-Muffin.md
+[5]: https://github.com/ronanguilloux/SilexMarkdown/blob/master/resources/markdown/5-Tiramisu.md
 
