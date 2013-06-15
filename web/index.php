@@ -2,7 +2,7 @@
 
 // Silex
 $env = "prod";
-$app = require __DIR__.'/../src/SilexMarkdown/app.php';
+require __DIR__.'/../src/SilexMarkdown/app.php';
 
 // php -S localhost:8080 -t web web/index.php
 $filename = __DIR__.preg_replace('#(\?.*)$#', '', $_SERVER['REQUEST_URI']);
