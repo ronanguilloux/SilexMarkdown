@@ -123,5 +123,3 @@ $app->error(function (\Exception $e, $code) use ($app) {
     return new Response($message, $code);
 });
 
-return $app;
-
