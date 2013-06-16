@@ -3,6 +3,10 @@ Markdown-generated website
 
 Generates a markdown-based website, using [Silex PHP micro-framework][s] & your own [markdown][m] files.
 
+[![Build Status](https://secure.travis-ci.org/ronanguilloux/SilexMarkdown.png?branch=master)](http://travis-ci.org/ronanguilloux/SilexMarkdown)
+[![Total Downloads](https://poser.pugx.org/ronanguilloux/SilexMarkdown/downloads.png)](https://packagist.org/packages/ronanguilloux/SilexMarkdown)
+
+
 
 A damn simple markdown-based website
 ------------------------------------
