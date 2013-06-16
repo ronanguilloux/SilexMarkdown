@@ -25,7 +25,6 @@
         "mheap/silex-assetic"                        : "dev-master@dev"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.*",
         "symfony/browser-kit": "dev-master",
         "symfony/css-selector": "dev-master"
     },
