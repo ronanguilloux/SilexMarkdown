@@ -8,7 +8,7 @@ class ApplicationTest extends WebTestCase
     public function createApplication()
     {
         // Silex
-        $app = require __DIR__.'/../../src/SilexMarkdown/app.php';
+        require __DIR__.'/../../src/SilexMarkdown/app.php';
 
         // Tests mode
         $app['debug'] = true;

@@ -4,3 +4,4 @@
 */logs/*
 */cache/*
 /web/assets/*
+/phpunit.phar
