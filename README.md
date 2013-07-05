@@ -16,8 +16,8 @@ The `/resources` directory contains various markdown files, prefixed with a orde
 
 Just start creating your own markdown files in the `./resources` directory, and your website is up.
 
-Design: The website uses the latest version of [Twitter Bootrap][b]; you can tweak it easely, following the Bootstrap documentation.
-Gears: Silexmarkdown project makes use of [php-markdown library][pm] & the [Silex Markdown Service Provider][smsp]
+* Design: The website uses the latest stable version of [Twitter Bootrap][b], installed via Composer
+* Gears: Silexmarkdown project makes use of [php-markdown library][pm] & the [Silex Markdown Service Provider][smsp]
 
 
 Installation
