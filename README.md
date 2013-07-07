@@ -11,7 +11,7 @@ Generates a markdown-based website, using [Silex PHP micro-framework][s] & your 
 A damn simple markdown-based website
 ------------------------------------
 
-Summary : markdown-files-based, Bootstrap-based CMS, w/ dynamic navigation menu generation.
+**Summary:** markdown-files-based, Bootstrap-based CMS, w/ dynamic navigation menu generation.
 
 
 ![PC Snapshot](https://raw.github.com/ronanguilloux/SilexMarkdown/master/resources/images/screenshot-pc.png)
