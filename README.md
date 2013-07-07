@@ -16,8 +16,12 @@ The `/resources` directory contains various markdown files, prefixed with a orde
 
 Just start creating your own markdown files in the `./resources` directory, and your website is up.
 
-* Design: The website uses the latest stable version of [Twitter Bootrap][b], installed via Composer
-* Gears: Silexmarkdown project makes use of [php-markdown library][pm] & the [Silex Markdown Service Provider][smsp]
+[Markdown philosophy reminder](http://daringfireball.net/projects/markdown/syntax#philosophy): "A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions."
+
+Anyway, you can mix html, inline-css (even if it's bad) & markdown between html tags, using a `markdon="1"` html attribute (see muffin.md page in this demo).
+
+Design: The website uses the latest version of [Twitter Bootrap][b]; you can tweak it easely, following the Bootstrap documentation.
+Gears: Silexmarkdown project makes use of [php-markdown library][pm] & the [Silex Markdown Service Provider][smsp]
 
 
 Installation

@@ -11,6 +11,10 @@ A markdown-based website, the easy way
 All markdown files in the `./resource` directory are displayed as links in the navigation bar above
 (all demo files texts come from [Cupcake Ipsum][c]).
 
+[Markdown philosophy reminder](http://daringfireball.net/projects/markdown/syntax#philosophy): "A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions."
+
+Anyway, you can mix html, inline-css (even if it's bad) & markdown between html tags, using a `markdon="1"` html attribute (see muffin.md page in this demo).
+
 The website uses the lastest version of [Twitter Bootrap][b].
 
 The `/resources` directory contains various markdown files, prefixed with a ordered number:
