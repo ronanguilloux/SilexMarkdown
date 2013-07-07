@@ -40,6 +40,9 @@
     "config": {
         "component-dir": "web/assets",
         "component-baseurl": "/assets"
+    },
+    "extra": {
+    "branch-alias": {
+        "dev-master": "1.0.x-dev"
     }
-
 }
