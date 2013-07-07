@@ -11,6 +11,12 @@ Generates a markdown-based website, using [Silex PHP micro-framework][s] & your 
 A damn simple markdown-based website
 ------------------------------------
 
+Summary : markdown-files-based, Bootstrap-based CMS, w/ dynamic navigation menu generation.
+
+
+![PC Snapshot](https://raw.github.com/ronanguilloux/SilexMarkdown/master/resources/images/screenshot-pc.png)
+
+
 *Markdown* files use the [markdown syntax][m], a very easy way to add typographical enhancements in your texts.
 The `/resources` directory contains various markdown files, prefixed with a ordered number: Just add/modify markdown files in it: they will generate links in the navigation bar of your website.
 
