@@ -13,7 +13,7 @@ All markdown files in the `./resource` directory are displayed as links in the n
 
 [Markdown philosophy reminder](http://daringfireball.net/projects/markdown/syntax#philosophy): "A Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions."
 
-Anyway, you can mix html, inline-css (even if it's bad) & markdown between html tags, using a `markdon="1"` html attribute (see muffin.md page in this demo).
+Anyway, you can mix html, inline-css (even if it's bad) & markdown between html tags, using a `markdon="1"` html attribute (see [muffin.md][4] page in this demo).
 
 The website uses the lastest version of [Twitter Bootrap][b].
 
