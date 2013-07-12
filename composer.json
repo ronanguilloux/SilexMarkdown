@@ -33,6 +33,7 @@
             "SilexMarkdown": "src/"
     }
     },
+    "minimum-stability": "stable",
     "scripts": {
         "post-install-cmd": "SilexMarkdown\\Composer\\Script::install",
         "post-update-cmd": "SilexMarkdown\\Composer\\Script::install"
