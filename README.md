@@ -66,7 +66,7 @@ Tests need --dev option while installing dependecing using composer:
 License
 -------
 
-This Silex Service Provider is released under the MIT License.  
+This Silex markdown-based website generator is released under the MIT License.  
 See the bundled LICENSE file for details.  
 You can find a copy of this software here: https://github.com/ronanguilloux/SilexMarkdown
 
