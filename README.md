@@ -58,9 +58,8 @@ Tests
 Tests need --dev option while installing dependecing using composer:
 
     $ composer.phar install --dev
-    $ wget https://phar.phpunit.de/phpunit.phar
-    $ chmod +x phpunit.phar
-    $ ./phpunit.phar
+    $ ln -s ./vendor/phpunit/phpunit/phpunit.php phpunit
+    $ ./phpunit
 
 
 License

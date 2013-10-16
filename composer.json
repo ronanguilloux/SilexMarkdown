@@ -24,8 +24,9 @@
         "mheap/silex-assetic"                        : "dev-master@dev"
     },
     "require-dev": {
-        "symfony/browser-kit": "dev-master",
-        "symfony/css-selector": "dev-master"
+        "phpunit/phpunit"                            : "*",
+        "symfony/browser-kit"                        : "dev-master",
+        "symfony/css-selector"                       : "dev-master"
     },
     "autoload": {
         "psr-0": {
